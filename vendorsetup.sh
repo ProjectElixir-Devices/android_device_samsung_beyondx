@@ -4,7 +4,7 @@ echo 'Starting Cloning repos for beyondx'
 echo 'Cloning Kernel tree [1/7]'
 # Kernel for exynos9820
 rm -rf kernel/samsung/exynos9820
-git clone https://github.com/linux4-bringup-priv/android_kernel_samsung_exynos9820 -b lineage-21.0 kernel/samsung/exynos9820
+git clone --depth=1 https://github.com/linux4-bringup-priv/android_kernel_samsung_exynos9820 -b lineage-21.0 kernel/samsung/exynos9820
 
 echo 'Cloning Common Tree [2/7]'
 # Common tree for exynos9820-common
@@ -19,9 +19,9 @@ git clone https://github.com/ProjectElixir-Devices/android_device_samsung_beyond
 echo 'Cloning Vendor Trees [4/7]'
 # Vendor blobs for beyondx
 rm -rf vendor/samsung/beyondx
-git clone https://github.com/BananaDroid-exynos9820/android_vendor_samsung_beyondx vendor/samsung/beyondx
+git clone --depth=1 https://github.com/BananaDroid-exynos9820/android_vendor_samsung_beyondx vendor/samsung/beyondx
 rm -rf vendor/samsung/exynos9820-common
-git clone https://github.com/BananaDroid-exynos9820/android_vendor_samsung_exynos9820-common vendor/samsung/exynos9820-common
+git clone --depth=1 https://github.com/BananaDroid-exynos9820/android_vendor_samsung_exynos9820-common vendor/samsung/exynos9820-common
 
 echo 'Cloning Hardware Samsung [5/7]'
 # Hardware OSS parts for Samsung
