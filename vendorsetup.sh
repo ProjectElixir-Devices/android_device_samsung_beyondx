@@ -33,16 +33,15 @@ mv nfc hardware/samsung
 echo 'Cloning Samsung_Slsi and Linaro BSP repos [6/7]'
 # SLSI Sepolicy
 rm -rf device/samsung_slsi/sepolicy
-git clone https://github.com/ElixirOS-982x/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy
-
+git clone https://github.com/BananaDroid-exynos9820/android_device_samsung_slsi_sepolicy device/samsung_slsi/sepolicy
 # Linaro BSP
 rm -rf hardware/samsung_slsi-linaro
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_graphics.git hardware/samsung_slsi-linaro/graphics
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_config.git hardware/samsung_slsi-linaro/config
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos.git hardware/samsung_slsi-linaro/exynos
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_openmax.git hardware/samsung_slsi-linaro/openmax
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos5.git hardware/samsung_slsi-linaro/exynos5
-git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_interfaces.git hardware/samsung_slsi-linaro/interfaces
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_graphics hardware/samsung_slsi-linaro/graphics
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_config hardware/samsung_slsi-linaro/config
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos hardware/samsung_slsi-linaro/exynos
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_openmax hardware/samsung_slsi-linaro/openmax
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_exynos5 hardware/samsung_slsi-linaro/exynos5
+git clone https://github.com/BananaDroid-exynos9820/android_hardware_samsung_slsi-linaro_interfaces hardware/samsung_slsi-linaro/interfaces
 
 echo 'Cloning Sepolicy Dependency repo [7/7]'
 # Sepolicy
